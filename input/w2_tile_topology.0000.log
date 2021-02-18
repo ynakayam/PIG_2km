@@ -1,0 +1,46 @@
+(PID.TID 0000.0001) W2_E2SETUP: number of Active Tiles =       1
+(PID.TID 0000.0001) W2_E2SETUP: number of Blank Tiles  =       0
+(PID.TID 0000.0001) W2_E2SETUP: Total number of Tiles  =       1
+(PID.TID 0000.0001) W2_SET_SINGLE_FACET: preDefTopol=  1 selected
+(PID.TID 0000.0001) W2_E2SETUP: Total number of Facets =       1
+(PID.TID 0000.0001) W2_SET_F2F_INDEX: index matrix for connected Facet-Edges:
+  N.Edge Facet  1 <-- S.Edge Facet  1 : pij=  1  0  0  1 ; oi,oj=     0    60
+  S.Edge Facet  1 <-- N.Edge Facet  1 : pij=  1  0  0  1 ; oi,oj=     0   -60
+  E.Edge Facet  1 <-- W.Edge Facet  1 : pij=  1  0  0  1 ; oi,oj=    50     0
+  W.Edge Facet  1 <-- E.Edge Facet  1 : pij=  1  0  0  1 ; oi,oj=   -50     0
+(PID.TID 0000.0001) W2_SET_MAP_TILES: tile mapping within facet and global Map:
+(PID.TID 0000.0001)  W2_mapIO =   50 (=    1*sNx)
+(PID.TID 0000.0001)  Global Map (IO): X-size=      50 , Y-size=      60
+(PID.TID 0000.0001) W2_SET_MAP_TILES: tile offset within facet and global Map:
+- facet  1 : X-size=    50 , Y-size=    60 ;    1 tiles (Tx,Ty=   1,   1)
+  tile    1 on facet  1 (  1,  1): offset=    0    0 ; on Glob.Map=       1       1
+(PID.TID 0000.0001) W2_SET_MAP_CUMSUM: setting Facet Matrix for CUMUL-SUM
+ Facet Matrix for CUMUL-SUM (nFacets=   1, nActive=   1 ):
+- facet  1 :  0  0 ,
+(PID.TID 0000.0001) W2_SET_MAP_CUMSUM: done (skip Tile Matrix setting)
+(PID.TID 0000.0001) W2_SET_TILE2TILES: tile neighbours and index connection:
+Tile    1 : nbNeighb=  4 ; is-at-Facet-Edge: N= 1 , S= 1 , E= 1 , W= 1
+ ns:  1 it=    1, iLo,iHi=     0    51, jLo,jHi=    61    61
+ ns:  2 it=    1, iLo,iHi=     0    51, jLo,jHi=     0     0
+ ns:  3 it=    1, iLo,iHi=    51    51, jLo,jHi=     0    61
+ ns:  4 it=    1, iLo,iHi=     0     0, jLo,jHi=     0    61
+(PID.TID 0000.0001) current Max.Nb.Neighbours (e.g., on tile    1 ) =  4
+(PID.TID 0000.0001) ===== W2 TILE TOPOLOGY =====
+(PID.TID 0000.0001)  TILE:     1 (bi,bj=   1   1 ), Nb of Neighbours =  4
+(PID.TID 0000.0001)     NEIGHBOUR  1 = TILE    1 (n=  2) Comm = PUT (PROC=    1)
+(PID.TID 0000.0001)     NEIGHBOUR  2 = TILE    1 (n=  1) Comm = PUT (PROC=    1)
+(PID.TID 0000.0001)     NEIGHBOUR  3 = TILE    1 (n=  4) Comm = PUT (PROC=    1)
+(PID.TID 0000.0001)     NEIGHBOUR  4 = TILE    1 (n=  3) Comm = PUT (PROC=    1)
+Tile     1 (pr=   1) sends pts i=  -7:  58, j=  53:  60
+                        to pts i=  -7:  58, j=  -7:   0 in tile      1 (pr=   1)
+Tile     1 (pr=   1) sends pts i=  -7:  58, j=   1:   8
+                        to pts i=  -7:  58, j=  61:  68 in tile      1 (pr=   1)
+Tile     1 (pr=   1) sends pts i=  43:  50, j=  -7:  68
+                        to pts i=  -7:   0, j=  -7:  68 in tile      1 (pr=   1)
+Tile     1 (pr=   1) sends pts i=   1:   8, j=  -7:  68
+                        to pts i=  51:  58, j=  -7:  68 in tile      1 (pr=   1)
+Tile     1 (pr=   1) recv pts i=  -7:  58, j=  61:  68 from tile     1 (pr=   1)
+Tile     1 (pr=   1) recv pts i=  -7:  58, j=  -7:   0 from tile     1 (pr=   1)
+Tile     1 (pr=   1) recv pts i=  51:  58, j=  -7:  68 from tile     1 (pr=   1)
+Tile     1 (pr=   1) recv pts i=  -7:   0, j=  -7:  68 from tile     1 (pr=   1)
+(PID.TID 0000.0001) ===  End TOPOLOGY report ===

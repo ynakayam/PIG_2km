@@ -1,0 +1,4 @@
+(PID.TID 0000.0001) ** WARNING ** INI_PARMS: Ignores diffKrT (or Kp,Kz) setting in file "data" with ALLOW_3D_DIFFKR
+(PID.TID 0000.0001) ** Warning ** KPP_READPARMS: ignores "data.kpp" file since
+(PID.TID 0000.0001) ** Warning ** KPP_READPARMS: useKPP= F (set from "data.pkg")
+(PID.TID 0000.0001) ** WARNING ** INI_MODEL_IO: use tiled-files to write sections (for OBCS)
